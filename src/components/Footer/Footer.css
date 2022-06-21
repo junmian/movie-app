@@ -1,0 +1,15 @@
+footer {
+  display: flex;
+  position: sticky;
+  width: 100%;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: auto;
+  opacity: 0.8;
+}
+
+.footerText {
+  font-size: 18px;
+}

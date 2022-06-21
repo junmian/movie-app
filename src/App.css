@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #282c34;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+}
+
+table {
+  max-width: 800px;
+  background-color: #515d75;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+th {
+  background-color: rgb(224, 224, 224);
+  color: black;
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align: center;
+  border-radius: 5px;
+  border-color: rgb(133, 158, 101);
+  font-size: 18px;
+}
+
+tr:nth-child(even) {
+  background-color: #5d7a81;
+}
+
+.rank-number {
+  font-size: 45px;
+}
+
+.title-cell {
+  width: 175px;
+}
+
+.movie-title {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: rgb(193, 206, 81);
+}
+
+a:visited {
+  color: rgb(205, 209, 214);
+}
+
+/*------------ Squiggle link -------------*/
+svg {
+  width: 100%;
+}
+
+.squiggle {
+  animation: shift 1s linear infinite;
+}
+
+@keyframes shift {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-20px);
+  }
+}
+
+a.specialeffects:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Squiggle-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.st0{animation:shift 1s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23fff' stroke-width='1' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-size: auto 6px;
+  background-repeat: repeat-x;
+  text-decoration: none;
+  padding-bottom: 3px;
+  color: rgb(148, 186, 236);
+}
+
+/* -------------- Media Query --------------- */
+@media only screen and (max-width: 800px) {
+  table,
+  td,
+  th {
+    font-size: 13px;
+  }
+  .title-cell {
+    width: 130px;
+  }
+  .movie-image {
+    width: 200px;
+  }
+  h1 {
+    font-size: 23px;
+  }
+  p {
+    font-size: 15px;
+  }
+  .rank-number {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  table,
+  td,
+  th {
+    font-size: 11px;
+  }
+  .title-cell {
+    width: 90px;
+  }
+  .movie-image {
+    width: 160px;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 12px;
+  }
+  .rank-number {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  table,
+  td,
+  th {
+    font-size: 10px;
+  }
+  .movie-image {
+    width: 100px;
+  }
+  h1 {
+    font-size: 15px;
+  }
+  p {
+    font-size: 10px;
+  }
+  .rank-number {
+    font-size: 20px;
+  }
+}
