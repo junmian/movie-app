@@ -106,7 +106,7 @@ const App = () => {
                 Avengers: Infinity War
               </a>
             }
-            movieImg={<img src={avengersInfinityWar} className="movie-image" alt="Avatar (2009)" />}
+            movieImg={<img src={avengersInfinityWar} className="movie-image" alt="Avengers: Infinity War (2018)" />}
             year="2018"
             gross="$2.048 Billion"
           />
