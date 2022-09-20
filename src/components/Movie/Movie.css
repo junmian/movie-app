@@ -3,6 +3,7 @@
   height: auto;
   border-radius: 8px;
   box-shadow: 5px 5px 15px 5px #000000;
+  transition: transform 150ms ease-in-out;
 }
 img:hover {
   transform: scale(1.8);
