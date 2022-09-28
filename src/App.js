@@ -10,10 +10,12 @@ import Footer from "./components/Footer/Footer";
 const App = () => {
   return (
     <div>
-      <h1>Top Five Highest-Grossing Films of All Time</h1>
-      <br></br>
-      <p>*Adjusted for inflation, as of June 2022</p>
+      <header>
+        <h1>Top Five Highest-Grossing Films of All Time</h1>
+      </header>
+      {/* <figcaption>*Adjusted for inflation, as of June 2022</figcaption> */}
       <table>
+        <caption>Adjusted for inflation, as of September 2022</caption>
         <thead>
           <tr>
             <th>Rank</th>
@@ -38,7 +40,7 @@ const App = () => {
             }
             movieImg={<img src={avatar} className="movie-image" alt="Avatar (2009)" />}
             year="2009"
-            gross="$2.847 Billion"
+            gross="$2.880 Billion"
           />
           <Movie
             rank="2"
@@ -54,7 +56,7 @@ const App = () => {
             }
             movieImg={<img src={avengers} className="movie-image" alt="Avengers: Endgame (2019)" />}
             year="2019"
-            gross="$2.797 Billion"
+            gross="$2.798 Billion"
           />
           <Movie
             rank="3"
@@ -70,7 +72,7 @@ const App = () => {
             }
             movieImg={<img src={titanic} className="movie-image" alt="Titanic (1997)" />}
             year="1997"
-            gross="$2.187 Billion"
+            gross="$2.202 Billion"
           />
           <Movie
             rank="4"
