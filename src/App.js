@@ -13,7 +13,6 @@ const App = () => {
       <header>
         <h1>Top Five Highest-Grossing Films of All Time</h1>
       </header>
-      {/* <figcaption>*Adjusted for inflation, as of June 2022</figcaption> */}
       <table>
         <caption>Adjusted for inflation, as of September 2022</caption>
         <thead>
